@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Lateral</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      height: 100vh;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    /* Menú lateral */
+    .sidebar {
+      width: 220px;
+      background: #1a1a1a;
+      padding-top: 30px;
+      box-shadow: 3px 0 15px rgba(0, 255, 255, 0.3);
+    }
+
+    .sidebar h2 {
+      color: #0ff;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 22px;
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 15px 25px;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+      border-left: 4px solid transparent;
+    }
+
+    .sidebar a:hover {
+      background: #0ff;
+      color: #000;
+      border-left: 4px solid #fff;
+      box-shadow: 0 0 10px #0ff;
+    }
+
+    /* Contenido principal */
+    .main-content {
+      flex: 1;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Menú</h2>
+    <a href="#">🏡 INICIO</a>
+    <a href="TIENDA.html">🛒 TIENDA</a>
+    <a href="REPORTES.html">📄 REPORTES</a>
+  </div>
+
+  <div class="main-content">
+    <h1>Bienvenido</h1>
+    <p>Este servidor web de confianza, donde puedes hacer cambios o canjes de diferentes cosas. Recuerda que si ves un problema en la web, repórtalo al administrador. Gracias por la comprensión.</p>
+  </div>
+
+</body>
+</html>
